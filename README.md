@@ -56,6 +56,7 @@ Alternatively, you can utilize `test.sh` to run these.
 
 ```bash
 $ bash test.sh
+{"points":28}
 ```
 
 ## Running without a docker container:
