@@ -31,6 +31,31 @@ describe('Test Points', () => {
 
     let points = calculatePoints(data)
     assert(points === 28)
+
+    data = {
+      "retailer": "M&M Corner Market",
+      "purchaseDate": "2022-03-20",
+      "purchaseTime": "14:33",
+      "items": [
+        {
+          "shortDescription": "Gatorade",
+          "price": "2.25"
+        }, {
+          "shortDescription": "Gatorade",
+          "price": "2.25"
+        }, {
+          "shortDescription": "Gatorade",
+          "price": "2.25"
+        }, {
+          "shortDescription": "Gatorade",
+          "price": "2.25"
+        }
+      ],
+      "total": "9.00"
+    }
+
+    points = calculatePoints(data)
+    assert(points === 109)
   })
 })
 
